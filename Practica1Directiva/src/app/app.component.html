@@ -1,0 +1,32 @@
+<div class="container">
+
+  <form class = "form-group row">
+    <div class="form-group col md-3">
+      <label for="nombre">Nombre:
+        <input type="text" name="nombre" id="nombre" placeholder="nombre" class = "form-control">
+      </label>
+      <label for="apellido">Apellido:
+        <input type="text" name="apellido" id="apellido" placeholder="apellido" class = "form-control">
+      </label>
+      <label for="cargo">Cargo:
+        <input type="text" name="cargo" id="cargo" placeholder="cargo" class = "form-control">
+      </label>
+      <label for="salario">salario:
+        <input type="text" name="salario" id="salario" placeholder="salario" class = "form-control">
+      </label>
+      <input type="submit" value="Cargar">
+    </div>
+  </form>
+
+<br>
+<br>
+
+  <h1> {{title}}</h1>
+  <div class="row">
+    <div class="col">
+      <div *ngFor="let empleado of empleados; index as i ">
+       {{i+1}}. {{empleado.nombre}} {{empleado.apellido}} {{empleado.cargo}} {{empleado.salario}}
+      </div>
+    </div>
+  </div>
+</div>
