@@ -7,6 +7,9 @@
   apellido: <input type="text" name="apellido"  [(ngModel)]="apellido" >
   <br>
   <br>
+  cargo: <input type="text" name="cargo"  [(ngModel)]="cargo" >
+  <br>
+  <br>
   <input type="submit" value="Enviar" (click)="registro()">
 </form>
 <br>
@@ -19,7 +22,9 @@
 </ng-template>
 
 <ng-template #verdad>
-  <p>usuario registrado con el {{nombre}} {{apellido}}</p>
+  <p>usuario registrado con el {{nombre}} <span [ngClass]="{paraDirectores:cargo == 'director'}">
+    {{apellido}}
+  </span>  y tiene el cargo de <span [ngStyle]="{ color: (cargo == 'director') || (cargo == 'Director') ? 'red' : 'blue' }" >{{cargo}}  </span> </p>
 </ng-template>
 
 <br>

@@ -14,7 +14,7 @@ export class AppComponent {
 
   nombre:String = "";
   apellido:String = "";
-
+  cargo:String = "";
   entradas: any;
 
   constructor(){
