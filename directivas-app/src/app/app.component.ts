@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Empleado } from './empleado.model';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,9 @@ export class AppComponent {
   nombre:String = "";
   apellido:String = "";
   cargo:String = "";
+  salario:Number = 0;
   entradas: any;
+
 
   constructor(){
     this.entradas = [
