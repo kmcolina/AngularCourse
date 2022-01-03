@@ -45,4 +45,10 @@ export class ActualizaComponentComponent implements OnInit {
     this.router.navigate(['']);
   };
 
+  eliminaEmpleado(){
+    this.empleadosService.eliminarEmpleadoServicio(this.indice);
+    this.router.navigate(['']);
+
+  };
+
 }
