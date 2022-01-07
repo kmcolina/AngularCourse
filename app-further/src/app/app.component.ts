@@ -12,6 +12,8 @@ export class AppComponent  implements AfterViewInit{
   //pipe
   title = 'app-further Hola mundo';
 
+  //explicacion de viewchild https://www.digitalocean.com/community/tutorials/angular-viewchild-access-component-es
+
   //view child change dom
   @ViewChild('info')
   info!: ElementRef;
