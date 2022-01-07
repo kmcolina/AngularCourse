@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FiltroPalabraPipePipe } from './filtro-palabra-pipe.pipe';
+import { ChildComponent } from './child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FiltroPalabraPipePipe
+    FiltroPalabraPipePipe,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
