@@ -6,19 +6,23 @@ import { AppComponent } from './app.component';
 import { FiltroPalabraPipePipe } from './filtro-palabra-pipe.pipe';
 import { ChildComponent } from './child.component';
 import { SharkDirective } from './shark.directive';
+import { MathOperationsService } from './math-operations.service';
+import { ComponentChildComponent } from './component-child/component-child.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FiltroPalabraPipePipe,
     ChildComponent,
-    SharkDirective
+    SharkDirective,
+    ComponentChildComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [MathOperationsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
