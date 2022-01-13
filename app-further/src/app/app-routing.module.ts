@@ -8,8 +8,8 @@ import { ComponentFatherRouterNestingComponent } from './component-father-router
 import { ComponentOneComponent } from './component-one/component-one.component';
 
 const routes: Routes = [
-  {path: 'padre', component:ComponentOneComponent},
-  {path: '', component: AppComponent},
+
+
   {path: 'hijo', component: ComponentChildComponent},
   {path: 'component-one', component: ComponentOneComponent},
   {path: 'component-two', component : ComponentFatherRouterNestingComponent,
