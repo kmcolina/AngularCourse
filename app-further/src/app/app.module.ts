@@ -8,6 +8,10 @@ import { ChildComponent } from './child.component';
 import { SharkDirective } from './shark.directive';
 import { MathOperationsService } from './math-operations.service';
 import { ComponentChildComponent } from './component-child/component-child.component';
+import { ComponentFatherRouterNestingComponent } from './component-father-router-nesting/component-father-router-nesting.component';
+import { ComponentOneComponent } from './component-one/component-one.component';
+import { ChildOnerRouterNestingComponent } from './child-oner-router-nesting/child-oner-router-nesting.component';
+import { ChildTwoRouterNestingComponent } from './child-two-router-nesting/child-two-router-nesting.component';
 
 
 @NgModule({
@@ -16,7 +20,11 @@ import { ComponentChildComponent } from './component-child/component-child.compo
     FiltroPalabraPipePipe,
     ChildComponent,
     SharkDirective,
-    ComponentChildComponent
+    ComponentChildComponent,
+    ComponentFatherRouterNestingComponent,
+    ComponentOneComponent,
+    ChildOnerRouterNestingComponent,
+    ChildTwoRouterNestingComponent
   ],
   imports: [
     BrowserModule,

@@ -32,6 +32,10 @@ export class AppComponent  implements AfterViewInit{
   };
 
 
+  //routing child nesting
+
+
+
   ngAfterViewInit() {
     console.log(this.info.nativeElement.innerHTML);
     this.info.nativeElement.innerHTML = "DOM updated succesfully!!!";

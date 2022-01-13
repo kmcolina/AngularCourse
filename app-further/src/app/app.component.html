@@ -359,6 +359,20 @@
   <span appShark>Fin!</span>
 
   <a href="" routerLink = "/hijo">Mostrar Hijo</a>
+
+  <h4 style = "margin: 10px; ">insertando router child nesting </h4>
+<!-- * * * * * * * * * * * para el router nesting  * * * * * * * * * * * -->
+  <nav>
+    <a [routerLink]="['/component-one']">Component One</a>
+    &nbsp;
+    <a [routerLink]="['/component-two']">Component Two</a>
+  </nav>
+
+  <div style="color: green; margin-top: 1rem;">Outlet:</div>
+  <div style="border: 2px solid green; padding: 1rem;">
+    <router-outlet></router-outlet>
+  </div>
+
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
@@ -369,4 +383,4 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<router-outlet></router-outlet>
+<!--<router-outlet></router-outlet>  -->
