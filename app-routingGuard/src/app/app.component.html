@@ -1,0 +1,21 @@
+<h1> app component html  </h1>
+
+
+<nav>
+  <a [routerLink]="['component-one']">Component One</a>
+  <a [routerLink]="['component-two']">Guarded Component Two</a>
+</nav>
+
+<div style="margin-top: 1rem;">
+  Can activate:
+
+</div>
+
+<div style="color: green; margin-top: 1rem;">Outlet:</div>
+<div style="border: 2px solid green; padding: 1rem;">
+  <router-outlet></router-outlet>
+</div>
+
+<p>
+  Try navigating to component two. It is prevented until checkbox is checked.
+</p>
