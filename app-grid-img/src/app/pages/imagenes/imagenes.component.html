@@ -1,0 +1,15 @@
+
+<div class="contenido">
+  <p>imagenes works!</p>
+  <p>soy un p en container de imagenes works</p>
+  <span fxLayout="row" box-sizing = "content-box" >
+    <img *ngFor="let tile of tiles" class = "imgSecure" src={{tile.image}} (click)="this.myfunction(tile)">
+  </span>
+
+  <h4>{{nombre}}</h4>
+<button class = "btn btn-primary" (click) = "cambiarNombre()">
+  Cambiar nombre
+</button>
+
+</div>
+

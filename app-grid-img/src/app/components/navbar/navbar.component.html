@@ -1,0 +1,14 @@
+<p>navbar works!</p>
+
+<div *ngIf="!loaded">
+ <p>soy negativo</p>
+  <app-imagenes></app-imagenes>
+  <button (click)="loadMyChildComponent();">Load</button>
+</div>
+
+
+<div *ngIf="loaded">
+<app-imagen></app-imagen>
+</div>
+
+
