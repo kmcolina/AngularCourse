@@ -1,14 +1,20 @@
-<p>imagen works!</p>
+<div class="imagenc">
 
-<h4>nombre del usuario que viene de imagenes</h4>
+  <p>imagen works!</p>
 
-<h5>{{dataImagen.nombrUsuario }}</h5>
-<h6> {{dataImagen.url}} </h6>
+  <h4>nombre del usuario que viene de imagenes</h4>
+  <h5>{{nombreHijo}}</h5>
+  <h5>{{dataImagen.nombrUsuario }}</h5>
+  <h6> {{dataImagen.url}} </h6>
 
-  <div fxLayout="row" box-sizing = "content-box" >
-    <img class = "imgSecure" src={{dataImagen.url}}>
-  </div>
+    <div fxLayout="row" box-sizing = "content-box" >
+      <img class = "imgSecure" src={{dataImagen.url}}>
+    </div>
+    <div fxLayout="row" box-sizing = "content-box" >
+      <img class = "imgSecure" src = {{urlHijo}}>
+    </div>
 
-<br>
+  <br>
 
-<button (click) = "cambiarNombre()">cambio en navbar el nombre</button>
+  <button (click) = "cambiarNombre()">cambio en navbar el nombre</button>
+</div>

@@ -1,5 +1,13 @@
 <h1>soy un titulo app component</h1>
 
+<!--este es el equivalente al imail inpit -->
 <app-navbar></app-navbar>
+
+<div>
+  <button  (click)="this.cambiarNombre()"> un boton </button>
+</div>
+<!--este es el equivalente a grid imagenes input -->
+<!-- <app-imagenes [class.shadowed]="!validOtpForm"  (isValid)="checkOtpController($event)"></app-imagenes> -->
+<app-imagenes [validOtpForm]="validOtpForm" ></app-imagenes>
 
 <router-outlet></router-outlet>

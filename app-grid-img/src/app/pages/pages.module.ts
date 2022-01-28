@@ -1,18 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ImagenesComponent } from './imagenes/imagenes.component';
+import { ComponentsModule } from '../components/components.module';
+import { ImagenSelectedComponent } from './imagen-selected/imagen-selected.component';
 
 
 @NgModule({
   declarations: [
-    ImagenesComponent
+    ImagenesComponent,
+    ImagenSelectedComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentsModule
 
   ],
   exports:[
-    ImagenesComponent
+    ImagenesComponent,
+    ImagenSelectedComponent
+
   ]
 })
 export class PagesModule { }

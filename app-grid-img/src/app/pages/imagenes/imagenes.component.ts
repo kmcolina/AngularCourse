@@ -1,4 +1,5 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+
 import { DataImageService } from 'src/app/services/data-image.service';
 
 
@@ -19,7 +20,17 @@ export interface Tile {
 })
 export class ImagenesComponent implements OnInit {
 
+  loaded: boolean =false;
+  urlHijo: string = "url";
+  @Input() validOtpForm: boolean = false;
+  buttonEnabled: boolean = false;
+  option: string = "e";
 
+  Valid: boolean =false;
+
+
+
+  //@Output() cambioNombre = new EventEmitter();
   constructor(private dataImagen:DataImageService) { }
 
   ngOnInit(): void {
@@ -40,12 +51,30 @@ export class ImagenesComponent implements OnInit {
 
   cambiarNombre(){
     this.nombre = "nombre en funcion images";
+    //this.cambioNombre.emit(this.nombre);
     this.dataImagen.nombrUsuario = this.nombre;
+     //this.validOtpForm = true;
   }
 
    myfunction(message : Tile){
      this.dataImagen.url = message.image;
-      alert(message.image);
+      this.urlHijo =  message.image;
+      //this.validOtpForm = true;
+      this.Valid = true;
 
+     // alert(message.image);
+
+  }
+  loadMyChildComponent(){
+     this.nombre = "nombre en funcion images";
+    this.loaded=true;
+    //this.urlHijo = this.urlHijo;
+   }
+
+     checkOtpController(event:any) {
+    this.validOtpForm = event;
+    this.buttonEnabled = this.validOtpForm ;
+    console.log(this.buttonEnabled);
+    if (this.option == 'e') this.buttonEnabled = true;
   }
 }

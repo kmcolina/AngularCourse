@@ -1,14 +1,19 @@
-<p>navbar works!</p>
 
-<div *ngIf="!loaded">
- <p>soy negativo</p>
-  <app-imagenes></app-imagenes>
-  <button (click)="loadMyChildComponent();">Load</button>
+<div class="navbarC">
+
+  <p >navbar works!</p>
+<!--   <div *ngIf="!loaded">
+
+   <p>soy negativo</p>
+    <app-imagenes ></app-imagenes>
+    <button (click)="loadMyChildComponent();">Load</button> -->
+    <!--cuando le doy click al boton habilita el componente imagen-->
+  <!-- </div> -->
+  <!-- <div *ngIf="loaded">
+  <app-imagen [nombreHijo]="nombreNav"></app-imagen>
+  </div> -->
 </div>
 
 
-<div *ngIf="loaded">
-<app-imagen></app-imagen>
-</div>
 
 

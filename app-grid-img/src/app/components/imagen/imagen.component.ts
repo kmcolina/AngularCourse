@@ -9,6 +9,9 @@ import { DataImageService } from 'src/app/services/data-image.service';
 export class ImagenComponent implements OnInit {
 
   @Input() nombreHijo: string = 'no hay nombre default imagen';
+  @Input() loaded: boolean =false;
+  @Input() urlHijo: string = 'no hay url';
+
   //constructor(private dataImagen:DataImageService ) { }
   constructor(public dataImagen: DataImageService) { }
   ngOnInit(): void {

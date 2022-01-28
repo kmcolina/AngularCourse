@@ -9,6 +9,7 @@ import { DataImageService } from 'src/app/services/data-image.service';
 
 export class NavbarComponent implements OnInit {
   loaded: boolean =false;
+  nombreNav: string = "nombrenavbvar";
   constructor(public dataImagen: DataImageService) { }
 
   ngOnInit(): void {

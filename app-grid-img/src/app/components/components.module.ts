@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ImagenComponent } from './imagen/imagen.component';
 
-import { PagesModule } from '../pages/pages.module';
+//import { PagesModule } from '../pages/pages.module';
 
 
 @NgModule({
@@ -13,7 +13,7 @@ import { PagesModule } from '../pages/pages.module';
   ],
   imports: [
     CommonModule,
-    PagesModule
+    //PagesModule
   ],
   exports: [
     NavbarComponent,

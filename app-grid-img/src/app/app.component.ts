@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
+import { ImagenesComponent } from './pages/imagenes/imagenes.component';
 
 /* export interface Tile {
   color: string;
@@ -29,4 +30,35 @@ export class AppComponent {
     {text: 'five', cols: 0.5, rows: 0.5, color: 'lightblue', image: 'https://picsum.photos/96/96/?random'},
     {text: 'six', cols: 0.5, rows: 0.5, color: 'lightgreen', image: 'https://picsum.photos/96/96/?random'},
   ]; */
+
+ @ViewChild(ImagenesComponent) child!:ImagenesComponent;
+  nombre: string = "";
+  validOtpForm: boolean = false;
+  loaded: boolean = false;
+  buttonEnabled: boolean = false;
+  option = 'e';
+
+
+ cambiarNombre(){
+  this.nombre = "nombre en funcion images";
+  //this.cambioNombre.emit(this.nombre);
+  console.log("valid option es ",this.validOtpForm  );
+   this.validOtpForm = true;
+   console.log("valid option es despues de cambiar click",this.validOtpForm  );
+
+}
+
+loadMyChildComponent(){
+   this.nombre = "nombre en funcion images";
+  this.loaded=true;
+  //this.urlHijo = this.urlHijo;
+ }
+
+   checkOtpController(event:any) {
+     console.log("valid en check controller ", event)
+  this.validOtpForm = event;
+  this.buttonEnabled = this.validOtpForm ;
+  console.log(this.buttonEnabled);
+  if (this.option == 'e') this.buttonEnabled = true;
+}
 }

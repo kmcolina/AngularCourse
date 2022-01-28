@@ -13,3 +13,11 @@
   background-color: lightblue;
 }
 
+
+  .shadowed {
+  opacity: 0.5;
+  pointer-events: none;
+  color: red;
+
+}
+
