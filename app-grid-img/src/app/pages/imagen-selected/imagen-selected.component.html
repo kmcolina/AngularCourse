@@ -8,10 +8,31 @@
   <h4>nombre del usuario que viene de imagenes</h4>
   <h5>{{nombreHijo}}</h5>
 
-
-    <div fxLayout="row" box-sizing = "content-box" >
+<!-- [class.shadowed]="!Valid"-->
+    <div fxLayout="row" box-sizing = "content-box" style="display: flex;" >
       <img class = "imgSecure" src = {{urlHijo}}>
+      <div   class="iteminput" style="align-self: flex-end;
+      margin-left: 20px;">
+        <input name = "input" ng-model="myInput" required placeholder="soy un input" >
+      </div>
     </div>
+      <button (click) = "iteminputvalid()"   >sou el ojito</button>
+
+<!-- <div class="cajit"  >
+
+  <div fxLayout="row" box-sizing = "content-box" [class.shadowed]="!Valid"   >
+    <img class = "imgSecure" src = {{urlHijo}}>
+  </div>
+
+      <div class="iteminput">
+        <form name="myForm">
+          <input name = "input2" ng-model="input2" required placeholder="soy un input">
+          <span  ng-show="myForm.input2.$touched && myForm.input2.$invalid">The name is required.</span>
+
+        </form>
+        <button ng-disabled="myForm.input2.$invalid"  (click) = "iteminputvalid()">sou el ojito</button>
+      </div>
+</div> -->
 
   <br>
 

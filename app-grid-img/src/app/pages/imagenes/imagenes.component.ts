@@ -53,13 +53,13 @@ export class ImagenesComponent implements OnInit {
     this.nombre = "nombre en funcion images";
     //this.cambioNombre.emit(this.nombre);
     this.dataImagen.nombrUsuario = this.nombre;
-     //this.validOtpForm = true;
+     this.validOtpForm = true;
   }
 
    myfunction(message : Tile){
      this.dataImagen.url = message.image;
       this.urlHijo =  message.image;
-      //this.validOtpForm = true;
+      this.validOtpForm = true;
       this.Valid = true;
 
      // alert(message.image);
@@ -68,7 +68,7 @@ export class ImagenesComponent implements OnInit {
   loadMyChildComponent(){
      this.nombre = "nombre en funcion images";
     this.loaded=true;
-    //this.urlHijo = this.urlHijo;
+    this.urlHijo = this.urlHijo;
    }
 
      checkOtpController(event:any) {

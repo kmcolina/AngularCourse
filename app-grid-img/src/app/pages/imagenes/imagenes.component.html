@@ -22,7 +22,7 @@
   <!--aca seria el imagen con palabra -->
   <div *ngIf="loaded">
 
-    <app-imagen-selected  [nombreHijo]="nombre" [loaded]="loaded" [urlHijo]="urlHijo"></app-imagen-selected>
+    <app-imagen-selected  [nombreHijo]="nombre"  [urlHijo]="urlHijo"  (isValid)="checkOtpController($event)"></app-imagen-selected>
     </div>
 
     <div [class.shadowed]="!Valid"  (isValid)="checkOtpController($event)"> <h5>hola soy otp validooo</h5>  </div>
