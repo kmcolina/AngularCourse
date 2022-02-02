@@ -1,0 +1,13 @@
+<div *ngIf = "!valorbol">
+ soy valor negativo
+</div>
+<h1>Angular - Parent child component data passing</h1>
+<h4>Parent Component</h4>
+
+<hr>
+<hr>
+<!-- <div *ngIf = "valorbol">hola es true </div> -->
+<div *ngIf = "valorbol">hola es true </div>
+
+<app-child  [inputFromParentb] = "inputbol" [inputFromParent] = "inputText" (outputFromChild) = "receiveChildData($event)" (outputFromChildB) = "receiveChildData2($event)"></app-child>
+
